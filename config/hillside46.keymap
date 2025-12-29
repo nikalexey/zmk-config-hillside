@@ -23,6 +23,28 @@
 #define Redo   LC(Y)
 
 / {
+    behaviors {
+        hml: homewrow_mods_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_LEFT_HAND";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-trigger-key-positions = <45 32 44 6 9 10 11 18 19 20 21 22 23 32 33 34 35 36 37 44 45 6 7 9 18 19 20 21 31 32 33 34 35 42 43 44 45 8>;
+        };
+
+        hmr: homewrow_mods_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_RIGHT_HAND";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-trigger-key-positions = <0 1 12 13 14 16 17 24 25 26 27 28 29 30 38 39 40 41 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 30 39>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -36,10 +58,10 @@
  */
 
             bindings = <
-&kp ESC   &kp Q  &kp W  &kp E  &kp R         &kp T                                          &kp Y      &kp U      &kp I      &kp O    &kp P      &kp BSLH
-&kp TAB   &kp A  &kp S  &kp D  &kp F         &kp G                                          &kp H      &kp J      &kp K      &kp L    &kp SEMI   &kp SQT
-&kp CLCK  &kp Z  &kp X  &kp C  &kp V         &kp B     &kp LBKT                   &kp RBKT  &kp N      &kp M      &kp COMMA  &kp DOT  &kp SLASH  &kp RSHIFT
-                               &kp LC(LGUI)  &kp BSPC  &kp SPACE  &mo 2    &mo 1  &kp RET   &kp LC(C)  &kp LC(V)
+&kp ESC   &kp Q        &kp W        &kp E          &kp R         &kp T                                            &kp Y      &kp U         &kp I         &kp O        &kp P           &kp BSLH
+&kp TAB   &hml LGUI A  &hml LALT S  &hml LSHIFT D  &hml LCTRL F  &kp G                                            &kp H      &hmr RCTRL J  &hmr RSHFT K  &hmr L LALT  &hmr RGUI SEMI  &kp SQT
+&kp CLCK  &kp Z        &kp X        &kp C          &kp V         &kp B     &kp LBKT                     &kp RBKT  &kp N      &kp M         &kp COMMA     &kp DOT      &kp SLASH       &kp RSHIFT
+                                                   &kp LC(LGUI)  &kp BSPC  &lt 3 SPACE  &mo 2    &mo 1  &kp RET   &kp LC(C)  &kp LC(V)
             >;
 
             label = "Default Layer";
