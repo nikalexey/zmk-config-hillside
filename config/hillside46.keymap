@@ -132,10 +132,10 @@
 
         lower_layer {
             bindings = <
-&m10_m11  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                                        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
-&m12_m13  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10                                       &trans        &kp LCTRL     &kp LSHFT     &kp LALT      &kp LGUI      &trans
-&m_grave  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans                    &trans     &trans        &trans        &trans        &trans        &out OUT_BLE  &out OUT_USB
-                                     &trans   &trans   &trans  &trans    &trans  &kp LC(X)  &kp LC(C)     &kp LC(V)
+&trans  &trans  &trans  &trans  &trans  &trans                                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
 
             label = "Lower Layer";
@@ -154,10 +154,10 @@
 
         gui_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&kp LG(ESC)    &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)                                                     &kp C_VOL_UP  &kp C_BRI_UP   &kp LC(EQUAL)         &trans    &kp LA(LC(LG(N1)))  &kp LA(LC(LG(N2)))
+&kp LG(GRAVE)  &kp LG(N6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(S)                                                      &kp C_VOL_DN  &kp C_BRI_DEC  &hml RSHFT LC(MINUS)  &kp RALT  &kp RGUI            &trans
+&kp LG(R)      &trans      &trans      &kp LG(C)   &kp LG(V)   &kp LG(LEFT)   &kp LG(RIGHT)                    &trans         &kp K_MUTE    &trans         &trans                &trans    &trans              &kp LA(LC(LG(P)))
+                                                   &trans      &kp LG(LS(F))  &kp LG(F)      &trans    &trans  &kp LG(ENTER)  &kp LG(T)     &trans
             >;
 
             label = "GUI Layer";
@@ -165,10 +165,10 @@
 
         func_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&m10_m11  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                                        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
+&m12_m13  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10                                       &trans        &kp LCTRL     &kp LSHFT     &kp LALT      &kp LGUI      &trans
+&m_grave  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans                    &trans     &trans        &trans        &trans        &trans        &out OUT_BLE  &out OUT_USB
+                                     &trans   &trans   &trans  &trans    &trans  &kp LC(X)  &kp LC(C)     &kp LC(V)
             >;
 
             label = "Func Layer";
