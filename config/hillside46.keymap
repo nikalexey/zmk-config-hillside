@@ -68,28 +68,32 @@
         m10: m10 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <>;
+            bindings = <&kp A &kp B &kp C &kp D &kp E &kp F &kp G &kp H>;
             label = "M10";
         };
 
         m11: m11 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp A &kp B &kp C &kp D &kp E &kp F &kp G &kp H &kp I &kp J &kp K>;
             label = "M11";
         };
 
         m12: m12 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp A &kp B &kp C &kp D &kp E &kp F &kp G &kp H &kp I &kp J &kp K &kp L &kp M>;
             label = "M12";
         };
 
         m13: m13 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings =
+                <&kp A &kp B &kp C &kp D &kp E &kp F &kp G &kp H &kp I &kp K &kp K &kp TAB>,
+                <&macro_tap_time 50>,
+                <&kp A &kp B &kp C &kp D &kp E &kp F &kp G &kp H &kp I &kp J &kp K &kp L &kp L>;
+
             label = "M13";
         };
 
