@@ -68,7 +68,7 @@
         m10: m10 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <>;
             label = "M10";
         };
 
@@ -192,10 +192,10 @@
 
         func_layer {
             bindings = <
-&m10_m11  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                                        &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
-&m12_m13  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10                                       &trans            &kp LCTRL          &kp LSHFT     &kp LALT      &kp LGUI      &trans
-&m_grave  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans                    &trans     &ext_power EP_ON  &ext_power EP_OFF  &trans        &trans        &out OUT_BLE  &out OUT_USB
-                                     &trans   &trans   &trans  &trans    &trans  &kp LC(X)  &kp LC(C)         &kp LC(V)
+&m10_m11  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                                                &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
+&m12_m13  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10                                               &trans            &kp LCTRL          &kp LSHFT     &kp LALT      &kp LGUI      &trans
+&m_grave  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans                            &trans     &ext_power EP_ON  &ext_power EP_OFF  &trans        &trans        &out OUT_BLE  &out OUT_USB
+                                     &trans   &trans   &trans  &trans    &studio_unlock  &kp LC(X)  &kp LC(C)         &kp LC(V)
             >;
 
             label = "Func Layer";
